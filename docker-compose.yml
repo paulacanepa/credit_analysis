@@ -1,0 +1,9 @@
+version: '3'
+services:
+  core-api:
+    build: .
+    container_name: "Jupiter-container-risk"
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./app/:/app
